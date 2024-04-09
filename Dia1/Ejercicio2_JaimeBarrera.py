@@ -1,28 +1,39 @@
-#TRABAJO PEDROOOO
+#EJERCICIO 2
+
 print("")
 print("Buenas mi primer Trabajo")
 print("")
 
-#Ingresar por teclado la imformacion/////
-print("Ingresa tu nombre")
+#INGRESA POR TECLADO LA INFORMACION ////////////////////////
+
+print("Ingresa tu nombre:")
 ingresar=input()
 print("")
-#Convertir de variables
-#TEXTO A NUMERO/////
-print("String a Numero")
+
+#CONVERTIR VARIABLES/////////////////////////////////////////
+
+#texto a numero
+
+print("Texto a Numero")
 Texto="Jaime Barrera"
 print(Texto)
 print(type(Texto))
-print("String a Numero")
+print("")
+
+
+print("Texto a Numero")
 print("Jaime Barrera a 24")
 Texto=24
 print(Texto)
 print(type(Texto))
 print("")
-#NUMERO A DECIMAL
+
+#Numero a decimal
+
 print("Numero a Decimal")
 print(Texto)
 print(type(Texto))
+print("")
 print("Numero a Decimal")
 print("24 a 1.234")
 Texto=1.234
@@ -30,22 +41,65 @@ print(Texto)
 print(type(Texto))
 print("")
 
-#Bucles for y while
+#BUCLES FOR Y WHILE///////////////////////////////////////////////
+
+#Bucle for
+
 print("Bucle for")
 for i in range (4):
-    print(i)
-    print("Soy camper")
+    print(i,"Soy camper")
+print("")
 
+#Bucle while
 print("Bucle while")
 n = 1
 while n <= 5:
     print(n)
     n = n + 1
-
 print("")
 
-#funciones 
+#FUNCIONES////////////////////////////////////////////////////////////
+
+#Funcion simple
+
+print("Funcion Simple")
+print("----------------")
+def camper():
+    print("Hola Camper!")
+    print("Bienvenido a Campusland")
+
+camper() #llamo la funcion
+print("")
+
+#Funcion parametros y argumentos
+print("Funcion parametros y argumentos")
+print("----------------")
+def camper(nombre,apellido):
+    print(f"Hola Camper, {nombre} {apellido}")
+    print("Bienvenido a Campusland")
+
+camper("Jaime","Barrera") #llamo la funcion
+print("")
+
+#Funcion argumentos opcionales
+print("Funcion argumentos opcionales")
+print("----------------")
+def camper(nombre,apellido="Sandoval"):
+    print(f"Hola Camper, {nombre} {apellido}")
+    print("Bienvenido a Campusland")
+
+camper("Jaime",) #llamo la funcion
+print("")
+
+#Funcion argumentos nombrados
+print("Funcion argumentos nombrados")
+print("----------------")
+def camper(nombre,apellido="Sandoval"):
+    print(f"Hola Camper, {nombre} {apellido}")
+    print("Bienvenido a Campusland")
+    
+camper(apellido="Barrera",nombre="Jaime") #llamo la funcion
+print("")
 
 
-
-#Desarrollado por Jaime Barrera - C.C 1.093.925.253
+# Desarrollado por Jaime Barrera - C.C 1.093.925.253
