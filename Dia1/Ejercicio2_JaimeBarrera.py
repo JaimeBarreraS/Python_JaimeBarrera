@@ -51,6 +51,7 @@ for i in range (4):
 print("")
 
 #Bucle while
+
 print("Bucle while")
 n = 1
 while n <= 5:
