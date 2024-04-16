@@ -6,7 +6,7 @@ def contador_pares(n, k): #Función que cuenta el número de pares de enteros di
 
     # Bucle para repetir sobre todos los pares posibles
     for i in range(jaime):
-        for j in range(i+1, jaime):
+        for j in range(i+1, jaime):#el bucle interno hace que se repite sobre j desde i+1 hasta jaime-1. Esto hace que no se repitan pares como (1, 2) y (2, 1).
             # Verificar si la suma del par es divisible por k
             if (n[i] + n[j]) % k == 0:
                 p = tuple(sorted((n[i], n[j])))  # Crear una tupla ordenada con el par
