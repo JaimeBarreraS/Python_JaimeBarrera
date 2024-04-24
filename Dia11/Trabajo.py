@@ -37,7 +37,7 @@ while goku: #se abre while mientras goku sea true
 
         elif opcion == 2:  # Crear nuevo dato
             Dato_N = {'type': tipo}  # Crea un nuevo diccionario Dato_N con una clave 'type' y el valor de la variable tipo
-            for i in datos:  # Itera sobre la lista datos
+            for i in datos:  #repite sobre la lista datos
                 if i['type'] == tipo:  # Si el valor de la clave 'type' coincide con el tipo seleccionado
                     for clave in i.keys():  # repite sobre todas las claves del diccionario
                         if clave != 'type':  # Si la clave actual es diferente de 'type'
@@ -68,12 +68,12 @@ while goku: #se abre while mientras goku sea true
             print(f"Se han actualizado los datos del type '{tipo}'")
 
         elif opcion == 4:  # Eliminar
-            id_eliminar = input(f"Ingrese el ID del dato '{tipo}': ")  # Solicita al usuario el ID del dato a eliminar
+            id_eliminar = input(f"Ingrese el ID del dato '{tipo}': ")  # usuario el ID del dato a eliminar
 
             eliminado = False  #boleano
             D_actualizado = []  # Lista para almacenar los datos actualizados
 
-            for i in datos:  # Itera sobre la lista de datos
+            for i in datos:  # repite sobre la lista de datos
                 if i['type'] == tipo:  # Si el valor de la clave 'type' coincide con el tipo seleccionado
                     if str(i.get('id', '')) == id_eliminar:  # Si el valor de la clave 'id' coincide con el ID ingresado
                         eliminado = True  # cierro el boleano y dice que se elimino un dato
