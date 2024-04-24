@@ -47,7 +47,7 @@ while goku: #se abre while mientras goku sea true
                             else:  # Si el usuario no ingresa un valor
                                 sub_claves = input(f"¿Desea agregar subclaves para '{clave}'? (si/no): ")  # Pregunta si desea agregar subclaves
                                 if sub_claves.lower() == 'si':  # Si la respuesta es si
-                                    Dato_N[clave] = {}  # Inicializa la clave con un diccionario vacío
+                                    Dato_N[clave] = {}  # la clave con un diccionario vacío
                                     while True:  # Bucle para agregar subclaves
                                         sub_clave = input(f"Ingrese el nombre de la subclave: ")
                                         if not sub_clave:  # Si el usuario no ingresa nada 
